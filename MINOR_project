@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo-1</title>
+    <script src="https://kit.fontawesome.com/92057a6aa4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="bootstrap.css">
+    <style>
+        body{
+            background-color: rgb(98, 204, 98);
+        }
+        .parent{
+            display: grid;
+            grid-template-areas: 'heading heading heading'
+            'img1 img2 img3'
+            'img4 img5 img6'
+            'img7 img8 img9' 
+            'footer footer footer';
+            gap: 30px;
+            align-content: center;
+            justify-content: center;
+            
+        }
+        .nav{
+            display: flex;
+            flex-direction: row;
+            margin-right: 0px;
+            margin-left: 600px;
+            margin-top: 200px;
+            text-decoration: none;
+            
+        }
+        .nav1{
+            margin: 20px;
+            padding: 12px 15px;
+            border: 1px solid rgb(37, 37, 104);
+            text-decoration: none;
+            background-color: rgb(37, 37, 104);
+        }
+        .nav2{
+            margin: 20px;
+            padding: 12px 15px;
+            border: 1px solid rgb(37, 37, 104);
+            background-color: rgb(37, 37, 104);
+        }
+        .nav3{
+            margin: 20px;
+            padding: 12px 15px;
+            border: 1px solid rgb(37, 37, 104);
+            background-color: rgb(37, 37, 104);
+        }
+        .nav1:hover{
+            background-color: red;
+            color: blue;
+            border-color: red;
+        }
+        .nav2:hover{
+            background-color: red;
+            color: blue;
+            border-color: red;
+        }
+        .nav3:hover{
+            background-color: red;
+            color: blue;
+            border-color: red;
+        }
+        .z{
+            text-decoration: none;
+            color: white;
+        }
+        #child1{
+            grid-area: heading;
+            width: 100%;
+            height: 400px;
+            background-image: url(https://tinyurl.com/2snancjw);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        #child3{
+            grid-area: img1;
+            width: 300px;
+            height: 400px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            overflow: auto;
+            text-decoration: none;
+            overflow-x: hidden;            
+        }
+        #child4{
+            grid-area: img2;
+            width: 300px;
+            height: 400px;
+            overflow: auto;
+            text-decoration: none;
+            overflow-x: hidden;
+            overflow-y: transparent;
+            
+        }
+        #child5{
+            grid-area: img3;
+            width: 300px;
+            height: 400px;
+            overflow: auto;
+            text-decoration: none;
+            overflow-x: hidden;
+        }
+        #child6{
+            grid-area: img4;
+            width: 300px;
+            height: 400px;
+            overflow: auto;
+            text-decoration: none;
+            overflow-x: hidden;
+        }
+        #child7{
+            grid-area: img5;
+            width: 300px;
+            height: 400px;
+            overflow: auto;
+            text-decoration: none;
+            overflow-x: hidden;
+        }
+        #child8{
+            grid-area: img6;
+            width: 300px;
+            height: 400px;
+            overflow: auto;
+            text-decoration: none;
+            overflow-x: hidden;
+        }
+        #child9{
+            grid-area: img7;
+            width: 300px;
+            height: 400px;
+            overflow: auto;
+            text-decoration: none;
+            overflow-x: hidden;
+        }
+        #child10{
+            grid-area: img8;
+            width: 300px;
+            height: 400px;
+            overflow: auto;
+            text-decoration: none;
+            overflow-x: hidden;
+        }
+        #child11{
+            grid-area: img9;
+            width: 300px;
+            height: 400px;
+            overflow: auto;
+            text-decoration: none;
+            overflow-x: hidden;
+        }
+        .a{
+            text-align: center;
+            margin: 30px;
+        }
+        .location{
+            font-size: 20px;
+            text-align: center;
+        }
+        .title{
+            text-align: center;
+            align-content: center;
+        }
+        .x{
+            margin: 10px;
+            color: black ;
+        }
+        @media all and (max-width:800px){
+            .cld{
+                width: 500px;
+
+            }
+            
+        }
+        @media all and (max-width: 800px) {
+        .nav {
+            flex-direction: column;
+            margin: 0;
+            text-align: center;
+        }
+        .nav1, .nav2, .nav3 {
+            margin: 10px;
+        }
+        }
+        @media all and (max-width: 800px) {
+        .parent {
+            grid-template-areas: 
+            'heading' 
+            'img1' 
+            'img2' 
+            'img3' 
+            'img4' 
+            'img5' 
+            'img6' 
+            'img7' 
+            'img8' 
+            'img9' 
+            'footer';
+        }
+    }
+        .ch img {
+            max-width: 100%;
+            height: auto;
+        }
+        body {
+            font-size: 16px;
+        }   
+        .title {
+            font-size: 1.5em;
+        }
+        .ch:hover{
+                cursor: pointer;
+                box-shadow: 0 0 2px 2px;
+                box-sizing: border-box;
+                opacity: 0.8;
+            }
+            .cld{
+                background-color: white;
+            }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div id="child1"><h1 class="a">HISTORICAL PLACES IN INDIA</h1>
+            <div class="nav">
+            <div class="nav1"><a href="#" class="z">Home</a></div>
+            <div class="nav2"><a href="#" class="z">About us</a></div>
+            <div class="nav3"><a href="#" class="z">Contact us</a></div>
+            </div>
+        </div>
+        <!-- <div id="child2">aside</div> -->
+        <div id="child3" class="cld"><h1 class="title">Tajmahal</h1>
+            <h3 class="location"><a href="https://latitude.to/articles-by-country/in/india/46/taj-mahal"><i class="fa-solid fa-location-dot fa-beat-fade"></i></a> Agra</h3>
+            <a href="https://en.wikipedia.org/wiki/Taj_Mahal">
+                <img src="https://tinyurl.com/22vdu5d4" style="width: 297px; height: 250px;" alt="Tajmahal" class="ch">
+            </a>
+            <p>
+                The Taj Mahal was commissioned by Shah Jahan in 1631, to be built in the memory 
+                of his wife Mumtaz Mahal, who died on 17 June that year, while giving birth to 
+                their 14th child, Gauhara Begum.[14][15] Construction started in 1632,[16] and the 
+                mausoleum was completed in 1648, while the surrounding buildings and garden were 
+                finished five years later. <a href="https://en.wikipedia.org/wiki/Taj_Mahal">read more</a>
+            </p>
+        </div>
+        <div id="child4" class="cld">
+            <h1 class="title">India gate</h1>
+            <h3 class="location"><a href="https://latitude.to/articles-by-country/in/india/2362/india-gate"><i class="fa-solid fa-location-dot fa-beat-fade"></i></a> New Delhi</h3>
+            <a href="https://en.wikipedia.org/wiki/India_Gate">
+                <img src="https://tinyurl.com/e7fass6b" style="width: 297px; height: 250px;" alt="India gate" class="ch">
+            </a>
+            <p>
+                The India Gate (formerly known as All India War Memorial) is a war memorial 
+                located near the Kartavya path on the eastern edge of the "ceremonial axis" of 
+                New Delhi, formerly called Rajpath. It stands as a memorial to 84,000 soldiers of 
+                the Indian Army who died between 1914 and 1921 in the First World War, in France, 
+                Flanders, Mesopotamia, Persia, East Africa, Gallipoli and...<a href="https://en.wikipedia.org/wiki/India_Gate">read more</a>
+            </p>
+        </div>
+        <div id="child5" class="cld"><h1 class="title">Redfort</h1>
+            <h3 class="location"><a href="https://latitude.to/articles-by-country/in/india/1116/red-fort"><i class="fa-solid fa-location-dot fa-beat-fade"></i></a> Old Delhi</h3>
+            <a href="https://en.wikipedia.org/wiki/Red_Fort">
+                <img src="https://tinyurl.com/yc4xwp4n" style="width: 297px; height: 250px;" alt="redfort" class="ch">
+            </a>
+            <p>
+                The Red Fort or Lal Qila (Hindustani: [laːl qiːlaː]) is a historic fort 
+                in the Old Delhi neighbourhood of Delhi, India, that historically served 
+                as the main residence of the Mughal emperors. Emperor Shah Jahan commissioned 
+                construction of the Red Fort on 12 May 1638,...<a href="https://en.wikipedia.org/wiki/Red_Fort">read more</a>
+            </p>
+        </div>
+        <div id="child6" class="cld"><h1 class="title">Charminar</h1>
+            <h3 class="location"><a href="https://latitude.to/articles-by-country/in/india/2537/charminar"><i class="fa-solid fa-location-dot fa-beat-fade"></i></a> Hyderabad</h3>
+            <a href="https://en.wikipedia.org/wiki/Charminar">
+                <img src="https://tinyurl.com/yc6d3ebn" style="width: 297px; height: 250px;" alt="Charminar" class="ch">
+            </a>
+            <p>
+                The Charminar (lit. 'four minarets') is a monument located in Hyderabad, Telangana, India. 
+                Constructed in 1591, the landmark is a symbol of Hyderabad and officially incorporated in the 
+                emblem of Telangana.[3] The Charminar's long history includes the existence of a mosque on its 
+                top floor for more than 425 years...<a href="https://en.wikipedia.org/wiki/Charminar">read more</a>
+            </p>
+        </div>
+        <div id="child7" class="cld">
+            <h1 class="title">Humpil</h1>
+            <h3 class="location"><a href="https://www.google.co.in/maps/d/viewer?mid=12sqfF6PwzL8E_ekEDtuvxiRfX7inqxAe&ll=15.308302119477949%2C76.41978850000005&z=12"><i class="fa-solid fa-location-dot fa-beat-fade"></i></a> Karnataka</h3>
+            <a href="https://en.wikipedia.org/wiki/Hampi">
+                <img src="https://tinyurl.com/4kyt5prj" style="width: 297px; height: 250px;" alt="Humpi" class="ch">
+            </a>
+            <p>Hampi, a temple town in Karnataka, is a fascinating spot.
+                 An open museum, Hampi can be best described as a 
+                 quaint place, lying amidst striking ruins of the
+                  past. The unearthly landscape, the magnificent 
+                  boulders, the carnival of carvings, the story of
+                   the past, Hampi is a sight to behold...<a href="https://en.wikipedia.org/wiki/Hampi">read more info</a>
+            </p>
+        </div>
+        <div id="child8" class="cld">
+            <h1 class="title">Varanasi</h1>
+            <h3 class="location"><a href="https://latitude.to/map/in/india/cities/varanasi"><i class="fa-solid fa-location-dot fa-beat-fade"></i></a> Uttar Pradesh</h3>
+            <a href="https://en.wikipedia.org/wiki/Varanasi">
+                <img src="https://tinyurl.com/239suen4" style="width: 297px; height: 250px;" alt="Varanasi" class="ch">
+            </a>
+            <p>
+                Dating back to the 8th century BC, Varanasi is one of
+                 the oldest still inhabited cities in the world. A
+                  major pilgrimage center for Hindus, this holy 
+                  city has long been associated with the mighty 
+                  Ganges River, one of the faith's most important 
+                  religious symbols...<a href="https://en.wikipedia.org/wiki/Varanasi">read more info</a>
+            </p>
+        </div>
+        <div id="child9" class="cld">
+            <h1 class="title">Amritsar</h1>
+            <h3 class="location"><a href="https://www.mapsofindia.com/lat_long/punjab/amritsar.html"><i class="fa-solid fa-location-dot fa-beat-fade"></i></a> punjab</h3>
+            <a href="https://en.wikipedia.org/wiki/Amritsar">
+                <img src="https://tinyurl.com/j7ckatpr" style="width: 297px; height: 250px;" alt="Amritsar" class="ch">
+            </a>
+            <p>
+                Founded in 1577 by Ram Das, Amritsar is an 
+                important hub of Sikh history and culture. The 
+                main attraction here is Harmandir Sahib, opened 
+                in 1604 and still often referred to as the Golden 
+                Temple for its beautiful gold decoration...<a href="https://en.wikipedia.org/wiki/Amritsar">read more info</a>
+            </p>
+        </div>
+        <div id="child10" class="cld">
+            <h1 class="title">Jagannath temple</h1>
+            <h3 class="location"><a href="https://latitude.to/map/in/india/cities/puri"><i class="fa-solid fa-location-dot fa-beat-fade"></i></a> Puri</h3>
+            <a href="https://en.wikipedia.org/wiki/Jagannath_Temple,_Puri">
+                <img src="https://tinyurl.com/2ypzd8j3" style="width: 297px; height: 250px;" alt="Mecca Masjid" class="ch">
+            </a>
+            <p>
+                The Jagannath Temple is an important Hindu 
+                temple dedicated to Jagannath, a form of 
+                Vishnu – one of the trinity of supreme 
+                divinity in Hinduism. Puri is in the state 
+                of Odisha, on the eastern coast of India. 
+                King Indradyumna of Avanti has built the 
+                main temple of Jagannath at Puri....<a href="https://en.wikipedia.org/wiki/Jagannath_Temple,_Puri">read more info</a>
+            </p>
+        </div>
+        <div id="child11" class="cld"><h1 class="title">Goa</h1>
+            <h3 class="location"><a href="https://goa-tourism.org.in/baga-beach-goa"><i class="fa-solid fa-location-dot fa-beat-fade"></i></a> Goa</h3>
+            <a href="https://en.wikipedia.org/wiki/Goa">
+                <img src="https://tinyurl.com/3nwvscwc" style="width: 297px; height: 250px;" alt="Goa" class="ch">
+                </a>
+            <p>
+                Long known within India as the "go-to" destination for those seeking a great 
+                beach holiday, Goa's beautiful western coastline, overlooking the Arabian Sea, has 
+                only recently been discovered by tourists from overseas. Goa's more than 60 miles 
+                of coastline is home to some of the world's loveliest beaches, each with their own 
+                particular appeal...<a href="https://en.wikipedia.org/wiki/Goa">read more info</a>
+            </p>
+        </div>
+        <div id="child12">
+            <h1>follow us on:</h1>
+            <a href="#"><i class="fa-brands fa-square-instagram fa-beat x" style="font-size: 40px;"></i></a>
+            <a href="#"><i class="fa-brands fa-square-facebook fa-beat x" style="font-size: 40px;"></i></a>
+            <a href="#"><i class="fa-brands fa-square-whatsapp fa-beat x" style="font-size: 40px;"></i></a>
+            <hr>
+            Copyright &copy;Kiran reddy
+            <h1 style="text-decoration: underline;">Designed by:</h1>
+            <p>Reddycharla chandra kiran reddy</p>
+        </div>
+    </div>
+</body>
+</html>
